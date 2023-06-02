@@ -1,1 +1,1 @@
-print "Hello"
+system.out.println ("Hello")
