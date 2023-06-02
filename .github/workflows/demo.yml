@@ -1,13 +1,13 @@
 name:demo
 on:push
 jobs:
- name:code
- run:ubuntu _latest
+    name:code
+    run:ubuntu _latest
  steps:
- name:checkout code
- uses:actions@checkout@v2
- name:demo
- uses:github/demo.yml
+   name:check out code
+   uses:actions/checkout@v2
+   name:run
+   uses:github/demo.yml@v2
  env:
  default branch:main
  githut_token:$((secrets.github_token))
