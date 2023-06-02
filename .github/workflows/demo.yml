@@ -1,9 +1,11 @@
-name:demo
-on:push
-jobs:
-    name:code
-    run:ubuntu _latest
- steps:
-   name: my step
-   run :echo "hello world"
- 
+ name:demo
+
+  on:push
+    
+   jobs:
+    
+       name:code
+       runs-on:ubuntu _latest
+     steps:
+           name:mystep
+           run:echo"hello world"
